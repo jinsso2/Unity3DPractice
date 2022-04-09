@@ -27,8 +27,8 @@ public class PlayerCtrl : MonoBehaviour
         float v = Input.GetAxis("Vertical");
         float r = Input.GetAxis("Mouse X");
 
-        // Debug.Log("h=" + h);
-        // Debug.Log("v=" + v);
+         Debug.Log("h=" + h);
+         Debug.Log("v=" + v);
 
         /*
         // Transform 컴포넌트의 position 속성값을 변경
