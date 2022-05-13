@@ -11,13 +11,17 @@ public class PlayerCtrl : MonoBehaviour
     public float moveSpd = 10.0f;   // 이동속도 변수 (public으로 처리해 인스펙터 창에 노출됨)
     public float turnSpd = 80.0f;   // 회전 속도 변수
 
-    void Start()
+    IEnumerator Start()
     {
         // Transform 컴포넌트를 추출해 변수에 대입
         tr = GetComponent<Transform>();
         anim = GetComponent<Animation>();
 
         anim.Play("Idle");    // 애니메이션 실행
+
+        turnSpd = 0.0f;
+        yield return new WaitForSeconds(0.3f);
+        turnSpd = 80.0f;
     }
 
 
