@@ -21,7 +21,7 @@ public class PlayerCtrl : MonoBehaviour
 
         turnSpd = 0.0f;
         yield return new WaitForSeconds(0.3f);
-        turnSpd = 80.0f;
+        turnSpd = 200.0f;
     }
 
 
